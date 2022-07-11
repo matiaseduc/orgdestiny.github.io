@@ -9,27 +9,19 @@ typeWrite(document.querySelector(".typewriter"));
 
 hoverChangeDescription(
   ".html",
-  "HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir."
+  "HTML is a markup-based language, where we mark up elements to define what information the page will display."
 );
 hoverChangeDescription(
   ".css",
-  "CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML."
+  "CSS is a style sheet language composed of "layers", created for the purpose of stylizing HTML pages."
 );
 hoverChangeDescription(
   ".js",
-  "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma."
+  "JavaScript is a structured, high-level scripting interpreted programming language with weak dynamic typing and multi-paradigm."
 );
 
 hoverChangeDescription(
   ".react",
-  "ReactJS é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web."
-);
-hoverChangeDescription(
-  ".next",
-  "Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React."
+  "ReactJS is an open source JavaScript library focused on creating user interfaces on web pages."
 );
 
-hoverChangeDescription(
-  ".tailwind",
-  "Tailwind CSS é um framework desenvolvido para maximizar o potencial do bom e velho CSS e levá-lo ainda mais longe."
-);
