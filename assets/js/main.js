@@ -13,7 +13,7 @@ hoverChangeDescription(
 );
 hoverChangeDescription(
   ".css",
-  "CSS is a style sheet language composed of "layers", created for the purpose of stylizing HTML pages."
+  "CSS is a style sheet language composed of layers, created for the purpose of stylizing HTML pages."
 );
 hoverChangeDescription(
   ".js",
