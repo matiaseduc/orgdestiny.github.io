@@ -1116,3 +1116,11 @@ footer .grid-layout div img {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.contact__container{
+  grid-template-columns: 1.75fr 1fr;
+  align-items: center;
+}
+.contact__button{
+  justify-self: center;
+}
