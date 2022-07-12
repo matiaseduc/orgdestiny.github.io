@@ -25,3 +25,8 @@ hoverChangeDescription(
   "ReactJS is an open source JavaScript library focused on creating user interfaces on web pages."
 );
 
+hoverChangeDescription(
+  ".sass",
+  "Sass (css preprocessor) is a stylesheet language. It is a simple scripting language used in Sass files."
+);
+
