@@ -11,12 +11,6 @@
       @include flexbox-center;
       position: relative;
       transition: 1s all ease;
-      #photo-iuricode {
-        width: 400px;
-      }
-      &:hover {
-        transform: scale(1.1);
-      }
       div {
         @include flexbox-center;
         img {

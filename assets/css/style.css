@@ -385,7 +385,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home #home-container-photo #logo-lab #luz-logo,
-#s-home .grid-layout #home #home-container-photo #logo-lab #logo-iuricode {
+#s-home .grid-layout #home #home-container-photo #logo-lab {
   opacity: 1;
   -webkit-animation: light 8s ease infinite alternate;
           animation: light 8s ease infinite alternate;
@@ -508,7 +508,7 @@ header .grid-layout nav .nav-list li a:hover {
   transition: 1s all ease;
 }
 
-#s-about .grid-layout #about-photo #photo-iuricode {
+#s-about .grid-layout #about-photo {
   width: 400px;
 }
 
@@ -697,7 +697,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-projects .grid-layout #projects > article:hover {
-  border: 1px solid #1014f2;
+  border: 1px solid #ff0000;
 }
 
 @media screen and (max-width: 1200px) {
@@ -734,6 +734,12 @@ header .grid-layout nav .nav-list li a:hover {
   position: relative;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+#s-projects div img {
+  width: 14%;
+  margin-left: 800px;
+  margin-top: -10%;
 }
 
 #s-projects .grid-layout a::after {

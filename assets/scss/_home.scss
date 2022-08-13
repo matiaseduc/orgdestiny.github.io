@@ -86,11 +86,6 @@
           @include responsive-tablet {
             display: none;
           }
-          #luz-logo,
-          #logo-iuricode {
-            opacity: 1;
-            animation: light 8s ease infinite alternate;
-          }
           @keyframes light {
             0%,
             55% {
