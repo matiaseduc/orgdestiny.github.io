@@ -79,7 +79,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ed58f292;
+  background-color: #00ADB5;
   /* scroll bar color if you want to change it  */
   border-radius: 8px;
 }
@@ -580,7 +580,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout #about-text h2 span {
-  color: #4a4dca;
+  color: #00ADB5;
   font-size: 64px;
 }
 
@@ -742,7 +742,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-contact .grid-layout h2 span {
-  color: #4144c5;
+  color: #00ADB5;
   font-size: 64px;
 }
 
@@ -772,7 +772,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-contact .grid-layout #contact article:hover {
-  border: 1px solid #5865F2;
+  border: 1px solid #00ADB5;
 }
 
 @media screen and (max-width: 1200px) {
