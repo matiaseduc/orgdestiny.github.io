@@ -16,6 +16,10 @@
   color: #fafafa;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 ul,
 ol {
   list-style: none;
@@ -780,10 +784,6 @@ header .grid-layout nav .nav-list li a:hover {
   }
 }
 
-#s-contact .grid-layout #contact article div {
-  height: 90px;
-}
-
 #s-contact .grid-layout #contact article div img {
   width: 70px;
 }
@@ -800,6 +800,34 @@ header .grid-layout nav .nav-list li a:hover {
   color: #cccccc;
   font-family: "DM Sans";
   font-size: 1.8rem;
+}
+
+.intervalCardReveal p {
+  margin-bottom: 20px;
+}
+
+.social-list {
+  display: flex;
+  width: 100%;
+}
+
+.social-list .github {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.social-list .github:last-of-type {
+  margin-right: 0;
+}
+
+.social-list .github img {
+  transition: 0.4s;
+}
+
+.social-list .github img:hover {
+  transform: rotate(10deg);
+  transition: 0.4s;
 }
 
 footer {
