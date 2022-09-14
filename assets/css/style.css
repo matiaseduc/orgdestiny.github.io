@@ -632,7 +632,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-projects .grid-layout #projects>article {
   background-color: #202225;
   height: auto;
-  padding: 15px;
+  padding: 40px;
   margin: 8px;
   -ms-flex-preferred-size: calc(33% - 20px);
   flex-basis: calc(33% - 20px);
@@ -682,12 +682,6 @@ header .grid-layout nav .nav-list li a:hover {
   position: relative;
   font-size: 1.8rem;
   font-weight: 500;
-}
-
-#s-projects div img {
-  width: 14%;
-  margin-left: 800px;
-  margin-top: -10%;
 }
 
 #s-projects .grid-layout a::after {
@@ -797,10 +791,31 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-contact .grid-layout #contact article p {
-  line-height: 3.2rem;
   color: #cccccc;
   font-family: "DM Sans";
   font-size: 1.8rem;
+}
+
+.project-main {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.project-text-section {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.project-image-section {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image-section img {
+  width: 120px;
 }
 
 .intervalCardReveal p {
