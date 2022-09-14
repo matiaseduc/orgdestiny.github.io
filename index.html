@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="sr">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -99,7 +99,7 @@
 
         <!-- ======= Home ======= -->
         <main>
-            <section id="s-home" class="load-hidden">
+            <section id="s-home">
                 <div class="grid-layout">
                     <div id="home">
                         
@@ -128,7 +128,7 @@
             </section>
 
             <!-- ======= About us ======= -->
-            <section id="s-about" class="load-hidden">
+            <section id="s-about">
                 <div class="grid-layout">
                     <div id="about">
                         <article id="about-text">
@@ -145,7 +145,7 @@
             </section>
 
             <!-- ======= Projects ======= -->
-            <section id="s-projects" class="load-hidden">
+            <section id="s-projects">
                 <div class="grid-layout">
                     <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
                     <div id="projects">
@@ -173,7 +173,7 @@
             </section>
 
             <!-- ======= Contact ======= -->
-            <section id="s-contact" class="load-hidden">
+            <section id="s-contact">
                 <div class="grid-layout">
                     <h2 class="delaySmallReveal">Plataformas <span>.</span></h2>
                     <div id="contact">
@@ -238,7 +238,7 @@
             </section>
 
             <!-- ======= Footer ======= -->
-            <section id="s-footer" class="load-hidden">
+            <section id="s-footer">
                 <div class="grid-layout">
                     <div id="footer">
                         <article id="footer-text">
@@ -251,18 +251,6 @@
             </section>
         </main>
 
-        <script>
-            //a propriedade reset permite que ao dar scroll para cima ou baixo os elementos
-            //sempre sofram o efeito reveal
-            ScrollReveal({ reset: true })
-
-            //na propriedade delay é possível definir o tempo que irá
-            //demorar para carregar as sections do html na tela.
-            ScrollReveal().reveal('#s-home', { delay: 60 });
-            ScrollReveal().reveal('#s-about', { delay: 60 });
-            ScrollReveal().reveal('#s-projects', { delay: 60 });
-            ScrollReveal().reveal('#s-contact', { delay: 60 });
-            ScrollReveal().reveal('#s-footer', { delay: 60 });
-        </script>
+        <script async type="module" src="./assets/js/scrollReveal.js"></script>
     </body>
 </html>

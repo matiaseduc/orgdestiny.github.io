@@ -18,10 +18,6 @@
   color: #fafafa;
 }
 
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 ul,
 ol {
   list-style: none;
