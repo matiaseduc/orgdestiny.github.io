@@ -1,9 +1,8 @@
-export function scrollRevealInterval() {
+export const scrollRevealInterval = () => {
   const sr = ScrollReveal({
     origin: "top",
     distance: "50px",
-    duration: 2000,
-    reset: true
+    duration: 2000
   });
 
   sr.reveal(".delaySmallReveal", { delay: 200 });
