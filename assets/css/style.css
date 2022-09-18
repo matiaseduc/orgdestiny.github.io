@@ -82,15 +82,16 @@ html {
 /* Nav Bar */
 
 header {
-  background: rgba(2, 3, 86, 0.178);
+  background: rgba(2, 3, 86, 0.85);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.477);
   z-index: 999;
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
+  transition: 1s;
 }
 
 @media screen and (max-width: 992px) {
@@ -245,7 +246,7 @@ header .grid-layout nav .nav-list li a:hover {
 /* Home */
 
 #s-home {
-  padding: 40px 50px;
+  padding: 50px;
   background-image: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(6,6,6,0.5578606442577031) 0%), url("../img/start-lg.gif");
   background-repeat: no-repeat;
   background-size: cover;
