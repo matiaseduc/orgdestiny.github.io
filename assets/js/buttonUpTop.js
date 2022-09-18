@@ -8,8 +8,6 @@ export const buttonUpTop = () => {
       window.scrollTo(0, 0);
   });
 
-  console.log(stylesAbout.height)
-
   window.addEventListener('scroll', () => {
       const isMov = window.scrollY > (heightAboout / 2) ? true : false;
 

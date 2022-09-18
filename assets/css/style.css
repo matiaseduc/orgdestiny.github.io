@@ -926,6 +926,10 @@ footer .grid-layout div img {
   align-items: flex-end;
 }
 
+.sections-footer-bottom .copyright-footer p {
+  margin-bottom: 0;
+}
+
 .sections-footer-bottom .logo-footer {
   flex-basis: 33.33%;
   display: flex;
