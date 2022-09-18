@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap");
 
 * {
   padding: 0;
@@ -74,7 +74,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00ADB5;
+  background-color: #00adb5;
   /* scroll bar color if you want to change it  */
   border-radius: 8px;
 }
@@ -88,10 +88,10 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.477);
   z-index: 999;
   width: 100%;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
-  transition: 1s;
+  transition: background 400ms;
 }
 
 @media screen and (max-width: 992px) {
@@ -247,7 +247,12 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home {
   padding: 50px;
-  background-image: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(6,6,6,0.5578606442577031) 0%), url("../img/start-lg.gif");
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 212, 255, 0) 0%,
+      rgba(6, 6, 6, 0.5578606442577031) 0%
+    ),
+    url("../img/start-lg.gif");
   background-repeat: no-repeat;
   background-size: cover;
   /* home background settings  */
@@ -293,7 +298,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home .grid-layout #home #home-container-text h1 #home-name {
   font-size: 5.6rem;
-  font-family: 'Tiro Devanagari Hindi', serif;
+  font-family: "Tiro Devanagari Hindi", serif;
   font-weight: 600;
 }
 
@@ -302,7 +307,11 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home #home-container-text a {
-  background: linear-gradient(225deg, rgba(0, 17, 253, 0.3) 0%, rgba(20, 16, 242, 0) 100%);
+  background: linear-gradient(
+    225deg,
+    rgba(0, 17, 253, 0.3) 0%,
+    rgba(20, 16, 242, 0) 100%
+  );
   color: #fafafa;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -322,7 +331,11 @@ header .grid-layout nav .nav-list li a:hover {
 #s-home .grid-layout #home #home-container-text a:hover {
   padding: 15px 45px;
   max-width: 280px;
-  background: linear-gradient(225deg, rgba(16, 20, 242, 0.6) 0%, rgba(16, 31, 242, 0) 100%);
+  background: linear-gradient(
+    225deg,
+    rgba(16, 20, 242, 0.6) 0%,
+    rgba(16, 31, 242, 0) 100%
+  );
 }
 
 #s-home .grid-layout #home #home-container-photo {
@@ -359,7 +372,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @-webkit-keyframes light {
-
   0%,
   55% {
     opacity: 0;
@@ -372,7 +384,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @keyframes light {
-
   0%,
   55% {
     opacity: 1;
@@ -391,7 +402,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @-webkit-keyframes lightDelay {
-
   0%,
   60% {
     opacity: 0;
@@ -404,7 +414,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @keyframes lightDelay {
-
   0%,
   60% {
     opacity: 0;
@@ -422,7 +431,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @-webkit-keyframes MoveUpDown {
-
   0%,
   100% {
     top: 34vh;
@@ -434,7 +442,6 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 @keyframes MoveUpDown {
-
   0%,
   100% {
     top: 34vh;
@@ -464,7 +471,7 @@ header .grid-layout nav .nav-list li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -512,7 +519,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout #about-text h2 span {
-  color: #00ADB5;
+  color: #00adb5;
   font-size: 64px;
 }
 
@@ -528,7 +535,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-projects {
   padding: 96px 48px;
   text-align: center;
-  background-color: #01000F;
+  background-color: #01000f;
 }
 
 @media screen and (max-width: 992px) {
@@ -558,7 +565,7 @@ header .grid-layout nav .nav-list li a:hover {
   text-align: left;
 }
 
-#s-projects .grid-layout #projects>article {
+#s-projects .grid-layout #projects > article {
   background-color: #202225;
   height: auto;
   padding: 40px;
@@ -569,29 +576,29 @@ header .grid-layout nav .nav-list li a:hover {
   transition: 1s all ease;
 }
 
-#s-projects .grid-layout #projects>article:hover {
+#s-projects .grid-layout #projects > article:hover {
   border: 1px solid #ff0000;
 }
 
 @media screen and (max-width: 1200px) {
-  #s-projects .grid-layout #projects>article {
+  #s-projects .grid-layout #projects > article {
     flex-basis: calc(50% - 20px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  #s-projects .grid-layout #projects>article {
+  #s-projects .grid-layout #projects > article {
     flex-basis: calc(100% - 20px);
   }
 }
 
-#s-projects .grid-layout #projects>article h3 {
+#s-projects .grid-layout #projects > article h3 {
   color: #fafafa;
   font-size: 2.4rem;
   font-weight: 500;
 }
 
-#s-projects .grid-layout #projects>article p {
+#s-projects .grid-layout #projects > article p {
   line-height: 24px;
   margin-top: 24px;
   color: #cccccc;
@@ -647,7 +654,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-contact .grid-layout h2 span {
-  color: #00ADB5;
+  color: #00adb5;
   font-size: 64px;
 }
 
@@ -659,18 +666,18 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-contact .grid-layout #contact article {
-  background-color: #01000F;
+  background-color: #01000f;
   height: auto;
   padding: 32px;
   margin: 8px;
   flex-basis: calc(33% - 20px);
   flex-grow: 1;
-  border: 1px solid #01000F;
+  border: 1px solid #01000f;
   transition: 1s all ease;
 }
 
 #s-contact .grid-layout #contact article:hover {
-  border: 1px solid #00ADB5;
+  border: 1px solid #00adb5;
 }
 
 @media screen and (max-width: 1200px) {
@@ -766,7 +773,7 @@ header .grid-layout nav .nav-list li a:hover {
 .social-list .icons svg:hover {
   transform: scale(0.9) /*rotate(10deg)*/;
   transition: 0.4s;
-  fill: #00ADB5;
+  fill: #00adb5;
 }
 
 footer {
@@ -830,7 +837,6 @@ footer .grid-layout div img {
 }
 
 @-webkit-keyframes blink {
-
   0%,
   100% {
     opacity: 1;
@@ -842,7 +848,6 @@ footer .grid-layout div img {
 }
 
 @keyframes blink {
-
   0%,
   100% {
     opacity: 1;
@@ -861,7 +866,7 @@ footer .grid-layout div img {
 /* Footer */
 
 #s-footer {
-  background-color: #01000F;
+  background-color: #01000f;
 }
 
 #s-footer .grid-layout #footer-text p {
@@ -899,7 +904,7 @@ footer .grid-layout div img {
 }
 
 .section-block p {
-  color: #FFF;
+  color: #fff;
   margin-bottom: 20px;
   font-size: 1.9rem;
   font-weight: bold;
@@ -982,12 +987,38 @@ footer .grid-layout div img {
     justify-content: center;
     padding: 0;
   }
-  
-  .copyright-footer, .logo-footer, .socials-footer {
+
+  .copyright-footer,
+  .logo-footer,
+  .socials-footer {
     margin-bottom: 40px;
   }
 
   .sections-footer-bottom .logo-footer img {
     width: 50px;
   }
+}
+
+.go-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #cccccc;
+  padding: 10px;
+  margin: 10px;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.go-to-top:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.go-to-top img {
+  width: 100%;
 }

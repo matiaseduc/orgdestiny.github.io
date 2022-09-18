@@ -5,15 +5,13 @@ export const scrollMenuEffect = () => {
   const headerElement = document.querySelector('header');
 
   window.addEventListener('scroll', () => {
-      const isMov = window.scrollY > (heightMenu / 3) ? true : false;
+      const isMov = window.scrollY > heightMenu ? true : false;
       
       console.log()
 
       if (isMov) {
-          headerElement.style.position = 'fixed';
           headerElement.style.background = 'rgba(2, 3, 86, 0.178)';
       } else {
-          headerElement.style.position = 'relative';
           headerElement.style.background = 'rgba(2, 3, 86, 0.85)';
       }
   });
