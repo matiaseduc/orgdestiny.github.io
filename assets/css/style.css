@@ -871,3 +871,123 @@ footer .grid-layout div img {
   font-size: 1.3rem;
   text-align: center;
 }
+
+.sections-footer {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.section-block {
+  font-size: 1.8rem;
+  color: #cccccc;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.section-block ul li a {
+  color: #cccccc;
+}
+
+.section-block ul li {
+  margin-top: 15px;
+}
+
+.section-block ul li:first-of-type {
+  margin-top: 0;
+}
+
+.section-block p {
+  color: #FFF;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.sections-footer-bottom {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  padding: 0 0 80px 0;
+}
+
+.sections-footer-bottom .copyright-footer {
+  color: #cccccc;
+  font-size: 1.8rem;
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sections-footer-bottom .logo-footer {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.sections-footer-bottom .logo-footer img {
+  width: 120px;
+}
+
+.sections-footer-bottom .socials-footer {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  align-items: flex-end;
+}
+
+.sections-footer-bottom .socials-footer ul {
+  display: flex;
+}
+
+.sections-footer-bottom .socials-footer ul li {
+  margin-right: 30px;
+}
+
+.sections-footer-bottom .socials-footer ul li:last-of-type {
+  margin-right: 0;
+}
+
+.sections-footer-bottom .socials-footer a {
+  color: #cccccc;
+}
+
+@media screen and (max-width: 992px) {
+  .sections-footer {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+
+  .section-block {
+    margin-bottom: 60px;
+  }
+
+  .section-block:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .section-block ul li {
+    margin-top: 30px;
+  }
+
+  .section-block ul li:first-of-type {
+    margin-top: 30px;
+  }
+
+  .sections-footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .copyright-footer, .logo-footer, .socials-footer {
+    margin-bottom: 40px;
+  }
+
+  .sections-footer-bottom .logo-footer img {
+    width: 50px;
+  }
+}
