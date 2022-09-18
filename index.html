@@ -73,11 +73,19 @@
 			</symbol>
             <symbol id="icon-90e" viewBox="0 0 16 16">
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-          </symbol>
-        </svg>
+			</symbol>
+			<symbol id="icon-90p" viewBox="0 0 32 32">
+				<path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"/>
+			</symbol>
+			<symbol id="icon-90o" viewBox="0 0 32 32">
+				<path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/>
+			</symbol>
+		</svg>
 
         <div class="go-to-top" id="buttonTop">
-            <img src="./assets/img/up-arrow.svg" alt="Voltar ao topo"/>
+			<svg>
+                <use xlink:href="#icon-90o"></use>
+            </svg>
         </div>
 
         <header>
@@ -89,7 +97,9 @@
                         <div class="line3"></div>
                     </div>
                     <ul class="nav-list">
-                        <li><a href="#s-about">Informações</a></li>
+                        <li>
+							<a href="#s-about">Informações</a>
+					</li>
                         <li>
                             <a href="#s-projects">Projetos</a>
                         </li>
@@ -121,12 +131,6 @@
                                 Projetos científicos tecnológicos
                             </a>
                         </div>
-                        <div id="home-container-photo">
-                            <div id="home-photo">
-                                <img src="./assets/img/Sem-Título-1.png"
-                                    alt="Logo Equipe" id="logo-lab" class="object" width="150px" height="200px" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -151,28 +155,21 @@
             <!-- ======= Projects ======= -->
             <section id="s-projects">
                 <div class="grid-layout">
-                    <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
-                    <div id="projects">
-                        <article class="intervalCardReveal">
-                            <div class="project-main">
-                                <div class="project-text-section">
-                                    <h3>Youtube Downloader</h3>
-    
-                                    <p>
-                                        Um site que disponibiliza o serviço de download de vídeos do youtube.
-                                    </p>
-    
-                                    <a href="https://youtube.johnlz.repl.co" rel="noopener" target="_blank"
-                                    class="delayExtraBigReveal">
-                                    Acessar
-                                    </a>
-                                </div>
-    
-                                <div class="project-image-section">
-                                    <img src="https://media.discordapp.net/attachments/915958695198859265/1008022038054707321/yt.png?width=480&height=480"
-                                    width="100px" height="100px" alt="Icon youtube" class="iconeyt" />
-                                </div> 
-                            </div>
+                    <div id="about-blog">
+                        <article id="about-text">
+                            <h2 class="delaySmallReveal">O grande propósito <span>.</span></h2>
+                            <p class="delayMediumReveal">
+                                Abrindo este projeto, encontramos portas para descobrimento e oportunidades nas possíveis áreas de trabalho e comunicações. Ocorrendo a origem de contribuições e auxílios a partir desta nova comunidade, podendo estar relacionando a todas atividades extraescolares. 
+								Disponibilizando e aplicando assim, um fórum de artigos científicos, ou de quaisquer categorias escolares ou alheio ao ambiente escolar de Destiny. Com a fundamental participação e colaboração da respectiva Comunidade Escolar e Externa e com suporte técnico do Comando Administrativo da fundação. 
+							</p>
+							<a href="/articles">
+								<tbutton class="delayMediumReveal">
+									Conheça os artigos
+									<svg>
+										<use xlink:href="#icon-90p"></use>
+									</svg>
+								</tbutton>
+							</a>
                         </article>
                     </div>
                 </div>
@@ -222,21 +219,6 @@
                                         </table>
                                     </a>
                                 </div>
-                            <!--
-                                Apenas adicionar imagem e link de redirecionamento
-                                e retirar o comentário das duas divs abaixo.
-                                -->
-
-<!--                                <div class="twitter">-->
-<!--                                    <a href="#" target="_blank">-->
-<!--                                        <img src="#" alt="Twitter Destiny" />-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                                <div class="email">-->
-<!--                                    <a href="#" target="_blank">-->
-<!--                                        <img src="#" alt="E-mail Destiny" />-->
-<!--                                    </a>-->
-<!--                                </div>-->
                             </div>
                         </article>
                     </div>
@@ -249,29 +231,29 @@
                     <div id="footer">
                         <article class="sections-footer intervalCardReveal">
                             <div class="section-block">
-                                <p>Security.</p>
+                                <p>Segurança</p>
                                 <ul>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="/sections/privacy/regulation">Regulamento, privacidade e termos</a></li>
+									<li><a href="/sections/problems/contact">Reportar problema de segurança</a></li>
                                 </ul>
                             </div>
 
                             <div class="section-block">
-                                <p>Website.</p>
+                                <p>Website</p>
                                 <ul>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                                    <li><a href="#s-about">Informações</a></li>
+                                    <li><a href="#s-projects">Apresentação de Projetos</a></li>
+                                    <li><a href="#s-contact">Conexões Sociais</a></li>
                                 </ul>
                             </div>
 
                             <div class="section-block">
-                                <p>Get in touch.</p>
+                                <p>Entre em contato</p>
                                 <ul>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+								    <li><a href="/contact">Contato Profissional com Destiny</a></li>
+                                    <li><a href="/structure">Estrutura Organizacional<a></li>
+                                    <li><a href="/maps">Mapas e direções</a></li>
+                                    <li><a href="/contributes">Contribua</a></li>
                                 </ul>
                             </div>
                         </article>
@@ -287,20 +269,19 @@
 
                             <div class="socials-footer">
                                 <ul>
+									<li>
+										
+									</li>
                                     <li>
-                                        <a href="#">Facebook</a>
+                                        <a href="https://github.com/orgdestiny">GitHub</a>
                                     </li>
 
                                     <li>
-                                        <a href="#">Twitter</a>
+                                        <a href="https://twitter.com/org__destiny">Twitter</a>
                                     </li>
 
                                     <li>
-                                        <a href="#">Instagram</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Youtube</a>
+                                        <a href="https://discord.gg/daBWqkRuf9">Discord</a>
                                     </li>
                                 </ul>
                             </div>

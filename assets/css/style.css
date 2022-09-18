@@ -267,8 +267,11 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home .grid-layout #home {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 90vh;
+  flex-direction: column;
+
+  height: 100vh;
   overflow: hidden;
   width: 100%;
 }
@@ -316,10 +319,11 @@ header .grid-layout nav .nav-list li a:hover {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 15px 30px;
-  max-width: 250px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border: 1px solid rgba(16, 31, 242, 0.5);
   transition: all 0.7s ease;
   margin-top: 30px;
@@ -576,6 +580,15 @@ header .grid-layout nav .nav-list li a:hover {
   transition: 1s all ease;
 }
 
+#s-projects .grid-layout #about-text p {
+  line-height: 3.2rem;
+  color: #cccccc;
+  width: 700px;
+  font-style: center;
+  font-family: "DM Sans";
+  font-size: 1.8rem;
+}
+
 #s-projects .grid-layout #projects > article:hover {
   border: 1px solid #ff0000;
 }
@@ -596,6 +609,59 @@ header .grid-layout nav .nav-list li a:hover {
   color: #fafafa;
   font-size: 2.4rem;
   font-weight: 500;
+}
+
+#s-projects .grid-layout #about-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#s-projects .grid-layout #about-blog tbutton {
+	min-height: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: -0.5rem;
+	color: #00adb5;
+	font-size: 20px;
+	display: inline-block;
+	font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+#s-projects .grid-layout #about-blog svg {
+	min-height: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: -0.5rem;
+	fill: #00adb5;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	  transition: all 1s ease-in-out;
+	  -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  -ms-transition: all 1s ease-in-out;
+}
+
+#s-projects .grid-layout #about-blog svg:hover {
+	min-height: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: -0.5rem;
+	fill: #00adb5;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	  transform: translate(0.2em,0);
+	  -webkit-transform: translate(0.2em,0);
+	  -moz-transform: translate(0.3em,0);
+	  -o-transform: translate(0.2em,0);
+	  -ms-transform: translate(0.2em,0);
 }
 
 #s-projects .grid-layout #projects > article p {
@@ -622,7 +688,7 @@ header .grid-layout nav .nav-list li a:hover {
   height: 1px;
   bottom: -7px;
   left: 0;
-  background: linear-gradient(270deg, #1410f2 0%, #16171d 100%);
+  background: linear-gradient(270deg, #00adb5 0%, #16171d 100%);
   transform-origin: bottom right;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -893,6 +959,7 @@ footer .grid-layout div img {
 
 .section-block ul li a {
   color: #cccccc;
+  position: relative;
 }
 
 .section-block ul li {
@@ -908,6 +975,53 @@ footer .grid-layout div img {
   margin-bottom: 20px;
   font-size: 1.9rem;
   font-weight: bold;
+}
+
+.section-block a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -7px;
+  left: 0;
+  color: #fff;
+  background: linear-gradient(270deg, #fff 0%, rgba(68,71,82,0) 100%);
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.section-block a:hover {
+	  color: #fff;
+}
+
+.section-block a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.socials-footer a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -7px;
+  left: 0;
+  color: #fff;
+  background: linear-gradient(270deg, #fff 0%, rgba(68,71,82,0) 100%);
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.socials-footer a:hover {
+	 color: #fff;
+}
+
+.socials-footer a:hover::after {
+  transform: scaleX(1);
+  color: #fff;
+  transform-origin: bottom left;
 }
 
 .sections-footer-bottom {
@@ -958,6 +1072,7 @@ footer .grid-layout div img {
 
 .sections-footer-bottom .socials-footer a {
   color: #cccccc;
+  position: relative;
 }
 
 @media screen and (max-width: 992px) {
@@ -976,10 +1091,12 @@ footer .grid-layout div img {
 
   .section-block ul li {
     margin-top: 30px;
+	font-size: 10px;
   }
 
   .section-block ul li:first-of-type {
     margin-top: 30px;
+	font-size: 10px;
   }
 
   .sections-footer-bottom {
@@ -1000,14 +1117,14 @@ footer .grid-layout div img {
 }
 
 .go-to-top {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: #cccccc;
   padding: 10px;
   margin: 10px;
+  fill: #cccccc;
   z-index: 1;
   border-radius: 50%;
   opacity: 0;
